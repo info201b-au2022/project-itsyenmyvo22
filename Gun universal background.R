@@ -48,6 +48,7 @@ final_data <- left_join(data, people_killed_state, by= "state")%>%
  add_row(state = "south dakota", deaths = 90, lat = 43.969515, long = -99.901813) %>%
    add_row(state = "west virginia", deaths = 335, lat = 38.597626, long = -80.454903)
  
+ coords_killed <- coords_killed[-c(42,49),]
 
  
  killed <- coords_killed %>%
