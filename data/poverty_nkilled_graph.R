@@ -5,36 +5,34 @@ poverty_rate_each_state <- read.csv("https://raw.githubusercontent.com/info201b-
   filter(date == max(date, na.rm = TRUE)) %>%
   mutate(state = tolower(state)) %>%
   select(state, Percent.Above.Poverty.Rate)
-View(poverty_rate_each_state)
 
 num_killed_each_state <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/all_sum_df.csv", stringsAsFactors = FALSE) %>%
   group_by(state) %>%
   summarise(tn_killed = sum(n_killed)) %>%
   mutate(state = tolower(state))
-View(num_killed_each_state)
 
 coordinates_50states <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/coordinates_50states2.csv", stringsAsFactors = FALSE) %>%
   select(location, lat, lon)
-View(coordinates_50states)
+
 names(coordinates_50states)[names(coordinates_50states) == "location"] <- "state"
 names(coordinates_50states)[names(coordinates_50states) == "lat"] <- "lat"
 names(coordinates_50states)[names(coordinates_50states) == "lon"] <- "long"
-View(coordinates_50states)
+
 coordinates_50states <- coordinates_50states %>%
   mutate(state = tolower(state)) 
-View(coordinates_50states)
+
 
 coords_killed <- left_join(num_killed_each_state, coordinates_50states, by = "state") %>%
   add_row(state = "south dakota", tn_killed = 90, lat = 43.969515, long = -99.901813) %>%
   add_row(state = "west virginia", tn_killed = 335, lat = 38.597626, long = -80.454903)
-View(coords_killed)
+
 
 coords_killed <- coords_killed[-c(42, 49), ]
-View(coords_killed)
+
 
 killed_div <- coords_killed %>%
   summarise(killed_divided_by_350 = (tn_killed/350))
-View(killed_div)
+
 
 state_shape <- map_data("state")
 
