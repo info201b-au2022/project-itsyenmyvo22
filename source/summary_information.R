@@ -11,7 +11,7 @@ data_summary <- read.csv("https://raw.githubusercontent.com/kkkatherine323/proje
 
 summary_info <- list()
 summary_info$deaths_sales_18 <- sum(data_summary$age18longgunsale, na.rm = T)
-summary_info$deaths_sales_18 <- sum(data_summary$age18longgunsale, na.rm = T)
+summary_info$deaths_sales_21 <- sum(data_summary$age21longgunsale, na.rm = T)
 summary_info$max_deaths_state <- data_summary %>%
   filter(n_killed == max(n_killed, na.rm = T)) %>%
   select(state)
