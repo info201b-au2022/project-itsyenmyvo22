@@ -66,7 +66,7 @@ final_data <- left_join(data, people_killed_state, by= "state")%>%
 
    
 
-ggplot(state_shape)+
+universal <- ggplot(state_shape)+
   geom_polygon(
     mapping = aes(x= long, y=lat, group= group , fill= factor(universal)),
     color= "white", 
