@@ -1,19 +1,19 @@
 library("ggplot2")
 
-poverty_rate_each_state <- read.csv("/Users/yenmy/Documents/info201/project/project-itsyenmyvo22/data/all_sum_df.csv", stringsAsFactors = FALSE) %>%
+poverty_rate_each_state <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/all_sum_df.csv", stringsAsFactors = FALSE) %>%
   group_by(state) %>%
   filter(date == max(date, na.rm = TRUE)) %>%
   mutate(state = tolower(state)) %>%
   select(state, Percent.Above.Poverty.Rate)
 View(poverty_rate_each_state)
 
-num_killed_each_state <- read.csv("/Users/yenmy/Documents/info201/project/project-itsyenmyvo22/data/all_sum_df.csv", stringsAsFactors = FALSE) %>%
+num_killed_each_state <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/all_sum_df.csv", stringsAsFactors = FALSE) %>%
   group_by(state) %>%
   summarise(tn_killed = sum(n_killed)) %>%
   mutate(state = tolower(state))
 View(num_killed_each_state)
 
-coordinates_50states <- read.csv("/Users/yenmy/Documents/info201/project/project-itsyenmyvo22/data/coordinates_50states2.csv", stringsAsFactors = FALSE) %>%
+coordinates_50states <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/coordinates_50states2.csv", stringsAsFactors = FALSE) %>%
   select(location, lat, lon)
 View(coordinates_50states)
 names(coordinates_50states)[names(coordinates_50states) == "location"] <- "state"
