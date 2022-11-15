@@ -48,7 +48,7 @@ state_shape <- map_data("state") %>%
   rename(state = region) %>%
   left_join(poverty_rate_each_state, by = "state")
 
-ggplot(state_shape) +
+trial <- ggplot(state_shape) +
   geom_polygon(
     mapping = aes(x = long, y = lat, group = group, fill = Percent.Above.Poverty.Rate),
     color = "white",
