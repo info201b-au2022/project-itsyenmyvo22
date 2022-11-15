@@ -1,0 +1,199 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={index.Rmd},
+  pdfauthor={Xiaotong(Katherine) Zhang, Yenmy Vo, Natalie Hinds, Kasper Li},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{index.Rmd}
+\author{Xiaotong(Katherine) Zhang, Yenmy Vo, Natalie Hinds, Kasper Li}
+\date{November 14, 2022}
+
+\begin{document}
+\maketitle
+
+\hypertarget{gun-violence-in-the-us-project-proposal}{%
+\section{\texorpdfstring{\textbf{Gun Violence in the US: Project
+Proposal}}{Gun Violence in the US: Project Proposal}}\label{gun-violence-in-the-us-project-proposal}}
+
+\hypertarget{code-name-waterguns}{%
+\subsection{Code Name: waterguns}\label{code-name-waterguns}}
+
+\hypertarget{authors}{%
+\subsection{\texorpdfstring{\emph{Authors:}}{Authors:}}\label{authors}}
+
+\textbf{Natalie Hinds
+(\href{mailto:Nhinds2@uw.edu}{\nolinkurl{Nhinds2@uw.edu}}) Kasper
+Li(\href{mailto:jiaxul9@uw.edu}{\nolinkurl{jiaxul9@uw.edu}}) Katherine
+Zhang (\href{mailto:Xiaotz7@uw.edu}{\nolinkurl{Xiaotz7@uw.edu}}) Yenmy
+Vo (\href{mailto:yenmyvo@uw.edu}{\nolinkurl{yenmyvo@uw.edu}})}
+
+\hypertarget{info-201-technical-foundations-of-informatics---the-information-school---university-of-washington}{%
+\subsubsection{INFO-201: Technical Foundations of Informatics - The
+Information School - University of
+Washington}\label{info-201-technical-foundations-of-informatics---the-information-school---university-of-washington}}
+
+November 2022
+
+\hypertarget{summary-information}{%
+\subsection{Summary Information}\label{summary-information}}
+
+We use datasets that are specific to incidents of gun violence, such as
+the state where the violence occurred, the date it occurred, how many
+casualties there were, how many areas sold guns to 18+, how many areas
+sold guns to 21+, and local poverty rates. The dataset we chose includes
+U.S. gun violence incidents from 2013 to 2018. To demonstrate the main
+purpose of what our project is studying, we chose to calculate five
+variables through the dataset that are representative of our research
+questions. These are the states in the dataset with the highest number
+of deaths due to gun violence, the states with the highest poverty
+rates, the highest number of deaths in a day, the number of deaths in
+areas where guns are sold to people over 18 years old, and the number of
+deaths in areas where guns are sold to people over 21 years old. The
+results obtained were \textbf{115710} deaths in areas where guns were
+sold to people over the age of 18 and \textbf{289} deaths in areas where
+guns were sold to people over the age of 21. The data set showed
+\textbf{50} gun violence deaths in a day, and the state with the highest
+number of deaths due to gun violence was \textbf{Florida}. In addition,
+the state with the highest poverty rate was \textbf{New Hampshire}.
+
+\hypertarget{summary-table}{%
+\subsubsection{Summary Table}\label{summary-table}}
+
+\begin{verbatim}
+##   deaths_sales_18 deaths_sales_21   state       state.1 n_killed
+## 1          115710             289 Florida New Hampshire       50
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  This table shows the five values we chose to calculate. As you can
+  visually see from the table, the number of gun violence deaths in
+  areas where guns are sold to those over 18 is much higher than the
+  number of deaths in areas where guns are sold to those over 21. Also,
+  it can be concluded from the maximum number of deaths in one day due
+  to gun violence that gun violence is a very serious cause for concern.
+\end{itemize}
+
+\hypertarget{charts}{%
+\subsection{Charts}\label{charts}}
+
+\hypertarget{chart1-poverty}{%
+\subsubsection{Chart1: Poverty}\label{chart1-poverty}}
+
+\includegraphics{index_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  This chart was included to show the relationship between gun violence
+  and poverty levels. The chart reveals that states with higher poverty
+  levels tend to have more gun deaths. New Hampshire, North Dakota, and
+  Wyoming are some of the states with the highest percentage of people
+  above poverty. These are also the states with some of the lowest gun
+  deaths. There's a trend that the midwest has a low number of gun
+  deaths while the eastern states as well as the states lining the
+  southern border have high gun deaths.
+\end{itemize}
+
+\hypertarget{chart2-universal-background-checks-and-gun-deaths.}{%
+\subsubsection{Chart2: Universal Background Checks and Gun
+Deaths.}\label{chart2-universal-background-checks-and-gun-deaths.}}
+
+\includegraphics{index_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  I chose to include the chart to show the amount of deaths and the
+  effect that background checks have on deaths in each state. The
+  information reveals that only 9 states have implemented gun control
+  laws with universal background checks. The chart also reveals that
+  many states without universal background checks have a significant
+  proportion of deaths compared to states with universal background
+  deaths, with an exception of California. The data visualization does
+  not account for population density, as states with rural populations
+  tend to have a lower amount of gun violence.
+\end{itemize}
+
+\hypertarget{chart3-the-number-of-gun-violence-injured}{%
+\subsubsection{Chart3: The number of gun violence \&
+injured}\label{chart3-the-number-of-gun-violence-injured}}
+
+\includegraphics{index_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  This chart shows the number of people killed and injured by shootings
+  across the United States over the years. Since there are many
+  variables in the original data, I simplified it to monthly data. The
+  chart shows that the number of injuries and deaths from 2013 to 2014
+  is not very large. But since 2014, the number has soared, and the
+  trend has been increasing year by year. For example, in 2014, the
+  maximum number of people injured in one month was about 2,500, but in
+  2016, the maximum number of people injured in one month rose to 3,000.
+  Therefore, we can conclude from this data visualization that gun
+  violence is gradually getting worse.
+\end{itemize}
+
+\end{document}

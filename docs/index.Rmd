@@ -68,7 +68,7 @@ summary_table
 plot(trial)
 ```
 
-* This chart was included to show the relationship between gun violence and poverty levels. The chart reveals that states with higher poverty levels tend to have more gun deaths. New Hampshire, North Dakota, and Wyoming are some of the states with the highest percentage of people above poverty. These are also the states with some of the lowest gun deaths. There's a trend that the midwest has a low number of gun deaths while the eastern states as well as the states llining the southern border have high gun deaths. 
+* This chart was included to show the relationship between gun violence and poverty levels. The chart reveals that states with higher poverty levels tend to have more gun deaths. New Hampshire, North Dakota, and Wyoming are some of the states with the highest percentage of people above poverty. These are also the states with some of the lowest gun deaths. There's a trend that the midwest has a low number of gun deaths while the eastern states as well as the states lining the southern border have high gun deaths. 
 
 ### Chart2: Universal Background Checks and Gun Deaths.
 
