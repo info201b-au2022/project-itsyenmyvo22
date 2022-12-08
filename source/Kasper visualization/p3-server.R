@@ -5,9 +5,21 @@ library(tidyverse)
 library(lubridate)
 
 all_sum_df<-read.csv(url("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/all_sum_df.csv"))
+#Since data has so many variables, I simplified it to data on a monthly basis.
+data_killed_injured<-all_sum_df %>%
+  select(date, n_killed, n_injured)%>%
+  mutate(year = year(date), month = month(date))%>%
+  group_by(year, month) %>%
+  summarise(sum_n_injured = sum(n_injured),sum_n_killed = sum(n_killed))
+data_killed_injured<-unite(data_killed_injured, col=date, c("year","month"), sep="/",remove=TRUE)
 
 
-## Define server logic
+
+colors <- c("n_killed" = "blue", "n_injured" = "red")
+
+
+
+  ## Define server logic
 server <- function(input, output) {
   output$line <- renderPlot({
     p <- ggplot(data_killed_injured, aes(x = date)) +
