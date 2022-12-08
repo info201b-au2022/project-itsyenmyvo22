@@ -16,7 +16,7 @@ line_panel<-tabPanel(
     ),
     mainPanel(
       plotOutput("line"),
-      p(textOutput("summary"))
+      p("This line graph shows the number of deaths and injuries caused by gun violence in the United States from January 2013 to March 2018.")
     )
   )
 )
