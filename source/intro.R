@@ -3,7 +3,7 @@ library(shiny)
 intro <- tabPanel(
   "Introduction Page",
                             
-    mianPanel(
+    mainPanel(
       h3("Introduction", style = "color: #1a4061"),
       p("Since there have been a number of recent shootings near the UW campus, some of which even have threatened the lives of UW students, this has drawn our attention and concern. 
       We were reminded of the gun violence cases that have occurred throughout the United States. Our project collects statistical data sets on gun violence and analyzes them. 
@@ -24,6 +24,6 @@ intro <- tabPanel(
       p("3. Which groups of people get affected by gun violence the most?"),
       br(),
       
-    )
+    ),
                               
 )

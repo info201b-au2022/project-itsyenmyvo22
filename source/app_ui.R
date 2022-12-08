@@ -3,7 +3,8 @@ library(shiny)
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Kasper%20visualization/p3-ui.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Yenmy%20files%20for%20Bar%20graph/p3_ui.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Natalie%20Boxplot%20data%20maker/app_ui2.R")
-source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/intro.R")
+source("~/Documents/info201/projects/project-itsyenmyvo22/source/intro.R")
+source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/docs/report.md")
 
 ui <- navbarPage(
   title = "Gun Violence in the US",
@@ -29,12 +30,12 @@ ui <- navbarPage(
   intro,
   
   # The three charts
-  tab_panel_chart1,
-  tab_panel_chart2,
-  tab_panel_chart3,
+  plot_panel,
+  scatter_panel,
+  #plot,
   
   # The project summary
-  tab_panel_summary,
+  #tab_panel_summary,
   
   # The project report
   report

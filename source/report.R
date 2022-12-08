@@ -6,20 +6,10 @@ library("markdown")
 report <-tabPanel(
   "Report",
   
-  fluidRow(
-    column(
-      6,
+  fluidPage(
       includeMarkdown("docs/report.md")
-    ),
-    column(
-      3,
-      p("This is a paragraph.")
-    ),
-    column(
-      3,
-      p("Rightmost column.")
     )
-  )
   
   
 )
+
