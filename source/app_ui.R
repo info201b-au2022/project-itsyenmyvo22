@@ -1,7 +1,12 @@
 library(shiny)
+library(plotly)
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(lubridate)
 
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Kasper%20visualization/p3-ui.R")
-source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Yenmy%20files%20for%20Bar%20graph/p3_ui2.R")
+source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Yenmy%20files%20for%20Bar%20graph/p3_ui.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Natalie%20Boxplot%20data%20maker/app_ui2.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/intro.R")
 #source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/docs/report.md")

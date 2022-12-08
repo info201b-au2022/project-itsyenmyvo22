@@ -2,7 +2,7 @@ library(shiny)
 library(hrbrthemes)
 library(viridisLite)
 #install.packages("hrbrthemes")
-
+library("dplyr")
 library(lubridate)
 
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Kasper%20visualization/p3-server.R")
