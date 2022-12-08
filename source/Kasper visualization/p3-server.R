@@ -17,7 +17,14 @@ data_killed_injured<-unite(data_killed_injured, col=date, c("year","month"), sep
 
 colors <- c("n_killed" = "blue", "n_injured" = "red")
 
-
+Killed_injured<- ggplot(data_killed_injured, aes(x = date)) +
+  geom_line(aes(y = sum_n_killed, color = "n_killed", group=1)) +
+  geom_line(aes(y = sum_n_injured, color = "n_injured",group=1)) +
+  labs(x = "date",
+       y = "ppl",
+       color = "type") +
+  scale_color_manual(values = colors)+
+  scale_x_discrete(breaks = c("2013/1","2014/1","2015/1","2016/1","2017/1","2018/1"))
 
   ## Define server logic
 server <- function(input, output) {
