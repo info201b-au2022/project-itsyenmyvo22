@@ -1,4 +1,5 @@
 library(shiny)
+library(plotly)
 ## Define UI for application
 line_panel<-tabPanel(
   "line plot",
@@ -14,14 +15,14 @@ line_panel<-tabPanel(
                   value = c(1,2))
     ),
     mainPanel(
-      plotOutput("plot"),
+      plotOutput("line"),
       p("This line graph shows the number of deaths and injuries caused by gun violence in the United States from January 2013 to March 2018.")
     )
   )
 )
-
 ui <- navbarPage(
   "line plot ",
   
   line_panel
 )
+

@@ -29,6 +29,7 @@ scatter_panel <- tabPanel(
     
   )
 )
+
 ui <- navbarPage(
   "Scatter plot ",
   

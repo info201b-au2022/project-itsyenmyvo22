@@ -25,12 +25,11 @@ Killed_injured<- ggplot(data_killed_injured, aes(x = date)) +
        y = "ppl",
        color = "type") +
   scale_color_manual(values = colors)+
-  scale_x_discrete(breaks = c("2013/1","2014/1","2015/1","2016/1","2017/1","2018/1"))+
-  labs(title="The number of gun violence killed and injured")
+  scale_x_discrete(breaks = c("2013/1","2014/1","2015/1","2016/1","2017/1","2018/1"))
 
 ## Define server logic
 server <- function(input, output) {
-  output$plot <- renderPlot({
+  output$line <- renderPlot({
     p <- ggplot(data_killed_injured, aes(x = date)) +
       theme_bw()+
       scale_x_discrete(breaks = c("2013/1","2014/1","2015/1","2016/1","2017/1","2018/1"))
