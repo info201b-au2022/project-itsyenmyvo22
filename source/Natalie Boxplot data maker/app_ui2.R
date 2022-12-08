@@ -5,7 +5,7 @@ library(plotly)
 # Create a variable `scatter_panel` that stores a `tabPanel()` for your 2nd page
 # It should include the following:
 scatter_panel <- tabPanel(
-  "Scatter",
+  "Boxplot",
   
   # Add a titlePanel to your tab
   titlePanel("Amount of Gun Deaths vs. Gun Control Law in effect"),
