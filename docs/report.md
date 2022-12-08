@@ -4,8 +4,7 @@
 
 ## Code Name: waterguns
 ## _Authors:_
-
-**Natalie Hinds (Nhinds2@uw.edu) Kasper Li(jiaxul9@uw.edu) Katherine Zhang (Xiaotz7@uw.edu) Yenmy Vo (yenmyvo@uw.edu)**
+Natalie Hinds (Nhinds2@uw.edu) Kasper Li(jiaxul9@uw.edu) Katherine Zhang (Xiaotz7@uw.edu) Yenmy Vo (yenmyvo@uw.edu)
 
 ### INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 
