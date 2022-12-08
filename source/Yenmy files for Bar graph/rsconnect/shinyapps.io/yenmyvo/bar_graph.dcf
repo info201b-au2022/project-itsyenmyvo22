@@ -1,0 +1,13 @@
+name: bar_graph
+title: bar_graph
+username:
+account: yenmyvo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7843365
+bundleId: 6608018
+url: https://yenmyvo.shinyapps.io/bar_graph/
+when: 1670463141.07511
+lastSyncTime: 1670463141.07512
+asMultiple: FALSE
+asStatic: FALSE

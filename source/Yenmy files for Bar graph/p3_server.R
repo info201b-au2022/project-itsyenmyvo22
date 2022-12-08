@@ -2,6 +2,7 @@
 
 library(shiny)
 library(plotly)
+library(dplyr)
 
 all_sum_df <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/all_sum_df.csv", stringsAsFactors = FALSE)
 
@@ -22,6 +23,7 @@ tn_injured <- all_sum_df %>%
   summarise(total_injured = sum(n_injured))
 
 p3_df <- left_join(p3_df, tn_injured, by = "state")
+p3_df <- p3_df[-9, ]
 
 p3_server <- function(input, output) {
   output$p3 <- renderPlotly({
