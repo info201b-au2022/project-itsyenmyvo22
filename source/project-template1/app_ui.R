@@ -11,7 +11,10 @@ library(shiny)
 
 source("tabs/tab_panel_intro.R")
 source("tabs/tab_panel_chart1.R")
-
+source("tabs/tab_panel_chart2.R")
+source("tabs/tab_panel_chart3.R")
+source("tabs/tab_panel_summary.R")
+source("tabs/tab_panel_report.R")
 
 ui <- navbarPage(
   title = "Project Example",
