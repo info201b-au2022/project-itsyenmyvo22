@@ -1,7 +1,9 @@
+library(shiny)
 library(ggplot2)
 library(dplyr)
 library(tidyverse)
 library(lubridate)
+
 all_sum_df<-read.csv(url("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/data/all_sum_df.csv"))
 
 #Since data has so many variables, I simplified it to data on a monthly basis.
@@ -26,27 +28,6 @@ Killed_injured<- ggplot(data_killed_injured, aes(x = date)) +
   scale_x_discrete(breaks = c("2013/1","2014/1","2015/1","2016/1","2017/1","2018/1"))+
   labs(title="The number of gun violence killed and injured")
 
-library(shiny)
-## Define UI for application
-ui <- fluidPage(
-  
-  # Application title
-  titlePanel("The number of gun violence killed and injured"),
-  sidebarLayout(
-    sidebarPanel(
-      sliderInput("slider",
-                  "Choose what to show",
-                  min = 1,
-                  max = 2,
-                  value = c(1,2))
-    ),
-    mainPanel(
-      plotOutput("plot"),
-      p("This line graph shows the number of deaths and injuries caused by gun violence in the United States from January 2013 to March 2018.")
-    )
-  )
-)
-
 ## Define server logic
 server <- function(input, output) {
   output$plot <- renderPlot({
@@ -66,6 +47,3 @@ server <- function(input, output) {
     print(p)
   })
 }
-
-## Run the application 
-shinyApp(ui = ui, server = server)
