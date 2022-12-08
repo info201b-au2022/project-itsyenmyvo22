@@ -7,7 +7,7 @@ report <-tabPanel(
   "Report",
   
   fluidPage(
-      includeMarkdown("docs/report.md")
+      includeMarkdown("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/docs/report.md")
     )
   
   

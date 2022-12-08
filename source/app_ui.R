@@ -5,6 +5,7 @@ source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/m
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Natalie%20Boxplot%20data%20maker/app_ui2.R")
 source("~/Documents/info201/projects/project-itsyenmyvo22/source/intro.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/docs/report.md")
+source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/report.R")
 
 ui <- navbarPage(
   title = "Gun Violence in the US",
