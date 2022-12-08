@@ -9,8 +9,8 @@ source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/m
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Yenmy%20files%20for%20Bar%20graph/p3_ui.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/Natalie%20Boxplot%20data%20maker/app_ui2.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/intro.R")
-#source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/docs/report.md")
 source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/report.R")
+source("https://raw.githubusercontent.com/info201b-au2022/project-itsyenmyvo22/main/source/summary.R")
 
 ui <- navbarPage(
   title = "Gun Violence in the US",
@@ -41,7 +41,7 @@ ui <- navbarPage(
   line_panel,
   
   # The project summary
-  #tab_panel_summary,
+  summary,
   
   # The project report
   report
