@@ -45,4 +45,10 @@ server <- function(input, output) {
       scale_color_manual(values = colors)
     print(p)
   })
+
+
+output$summary <- renderText ({
+  "This line graph shows the number of deaths and injuries caused by gun violence in the United States from January 2013 to March 2018."
+})
+
 }
